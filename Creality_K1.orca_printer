@@ -1,0 +1,31 @@
+{
+    "version": "2024.0",
+    "printer_name": "Creality K1",
+    "build_volume": {
+        "x": 220,
+        "y": 220,
+        "z": 250
+    },
+    "nozzle_diameter": 0.4,
+    "max_feedrate": {
+        "x": 500,
+        "y": 500,
+        "z": 20,
+        "e": 100
+    },
+    "max_acceleration": {
+        "x": 5000,
+        "y": 5000,
+        "z": 100,
+        "e": 10000
+    },
+    "max_jerk": {
+        "x": 10,
+        "y": 10,
+        "z": 0.4,
+        "e": 10
+    },
+    "gcode_flavor": "Marlin",
+    "start_gcode": "G28 ; Home\nG1 Z2.0 F3000 ; Move Z Axis",
+    "end_gcode": "M104 S0 ; Turn off extruder\nM140 S0 ; Turn off bed\nG28 X0 ; Home X axis\nM84 ; Disable motors"
+}

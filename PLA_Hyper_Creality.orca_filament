@@ -1,0 +1,12 @@
+{
+    "version": "2024.0",
+    "filament_type": "PLA",
+    "filament_name": "PLA Hyper Creality",
+    "nozzle_temperature": 215,
+    "bed_temperature": 60,
+    "fan_speed": 100,
+    "fan_speed_min": 30,
+    "flow_rate": 100.0,
+    "density": 1.24,
+    "cost_per_kg": 20.0
+}

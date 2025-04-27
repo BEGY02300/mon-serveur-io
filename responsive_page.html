@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftLynx</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a><b><span style="font-size: 20px;">SoftLynx</span></b></a></li>
+                <li><a href="#"><b>Accueil</b></a></li>
+                <li><a href="#"><b>À propos</b></a></li>
+                <li><a href="#"><b>Services</b></a></li>
+                <li><a href="#"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <a href="#"><b>Rejoignez-nous</b></a>
+            <a href="#"><b>Connexion</b></a>
+        </div>
+    </header>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #165A4B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 5vw; /* Padding ajusté selon la taille de l'écran */
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 2vw; /* Marges en fonction de la largeur de l'écran */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh; /* Taille du texte ajustée selon la hauteur de l'écran */
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.actions a {
+    margin-left: 2vw;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh; /* Taille du texte des boutons ajustée selon la hauteur de l'écran */
+    border: 0.3vh solid white; /* Épaisseur de la bordure basée sur la hauteur de l'écran */
+    padding: 1.5vh 2vw; /* Padding ajusté avec des unités relatives */
+    border-radius: 0.5vh;
+    transition: background-color 0.3s ease;
+    width: 15vw; /* Largeur du bouton relative à la largeur de l'écran */
+    height: 6vh; /* Hauteur du bouton relative à la hauteur de l'écran */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer le contenu du bouton */
+}
+
+.actions a:hover {
+    background-color: white;
+    color: #165A4B;
+}
+
+/* Taille du texte dans l'ensemble de la page */
+body {
+    font-size: 2vh; /* Taille globale du texte ajustée selon la hauteur de l'écran */
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 2vh 0;
+    }
+
+    .actions a {
+        font-size: 3vh; /* Augmente la taille du texte pour les petits écrans */
+        width: 25vw; /* Largeur du bouton adaptée à un écran plus petit */
+        height: 8vh; /* Hauteur augmentée pour un écran plus petit */
+        margin: 1vh 0;
+    }
+
+    body {
+        font-size: 2.5vh; /* Taille du texte global augmentée pour les petits écrans */
+    }
+}
+
+/* Media Queries pour les très petits écrans */
+@media (max-width: 480px) {
+    header {
+        padding: 2vh 2vw;
+    }
+
+    nav ul li a {
+        font-size: 4vh; /* Taille du texte dans les liens augmentée pour les très petits écrans */
+    }
+
+    .actions a {
+        font-size: 4vh; /* Texte plus grand dans les boutons pour des écrans très petits */
+        width: 35vw; /* Bouton plus large pour les très petits écrans */
+        height: 10vh; /* Hauteur augmentée pour un écran très petit */
+        padding: 2vh 3vw;
+    }
+
+    body {
+        font-size: 3vh; /* Taille globale du texte ajustée pour les très petits écrans */
+    }
+}
